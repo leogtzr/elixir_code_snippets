@@ -1,0 +1,7 @@
+iex(1)> swap = fn { a, b } -> {b, a} end
+#Function<44.97283095/1 in :erl_eval.expr/5>
+iex(2)> swap.({ 3, 2 })
+{2, 3}
+iex(3)> 
+
+
