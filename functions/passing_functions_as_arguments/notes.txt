@@ -1,0 +1,11 @@
+iex(5)> (fn (fun, value) -> fun.(value) end).(fn n -> n end, 3)
+3
+
+nteractive Elixir (1.10.3) - press Ctrl+C to exit (type h() ENTER for help)
+iex(1)> times_2 = fn n -> n * 2 end
+#Function<44.97283095/1 in :erl_eval.expr/5>
+iex(2)> apply = fn (fun, value) -> fun.(value) end
+#Function<43.97283095/2 in :erl_eval.expr/5>
+iex(3)> apply.(times_2, 10)
+20
+iex(4)>
