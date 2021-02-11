@@ -2,7 +2,9 @@ defmodule Greeter do
 
   def for(name, greeting) do
     fn
+      # First "head"
       (^name) -> "#{greeting} #{name}"
+      # Second "head"
       (_) -> "I don't know you"
     end
   end
