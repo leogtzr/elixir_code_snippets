@@ -1,0 +1,23 @@
+130 🐧 leo@lein ~/code/elixir/elixir_code_snippets/default_params (main) $ cat default_params.exs 
+defmodule Example do
+ def func(p1, p2 \\ 22, p3 \\ 33) do
+    IO.inspect [p1, p2, p3]
+ end
+end
+0 🐧 leo@lein ~/code/elixir/elixir_code_snippets/default_params (main) $ iex
+Erlang/OTP 23 [erts-11.0.3] [source] [64-bit] [smp:8:8] [ds:8:8:10] [async-threads:1]
+
+Interactive Elixir (1.10.3) - press Ctrl+C to exit (type h() ENTER for help)
+iex(1)> c "default_params.exs"
+[Example]
+iex(2)> Example.func(23)
+[23, 22, 33]
+[23, 22, 33]
+iex(3)> Example.func(23, 452)
+[23, 452, 33]
+[23, 452, 33]
+iex(4)> Example.func(23, 5, 8)
+[23, 5, 8]
+[23, 5, 8]
+iex(5)> 
+
