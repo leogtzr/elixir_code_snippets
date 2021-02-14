@@ -1,0 +1,6 @@
+iex(3)> x = 23
+23
+iex(4)> x |> Something.fun1
+529
+iex(5)> 
+
