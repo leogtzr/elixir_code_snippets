@@ -1,0 +1,38 @@
+iex(28)> Float.to_string(Float.floor(5.678, 2))
+"5.67"
+iex(29)> 
+
+iex(35)> List.to_string(:io_lib.format("~.2f", [5.678]))
+"5.68"
+iex(36)> "5.68" == List.to_string(:io_lib.format("~.2f", [5.678]))
+true
+iex(37)> 
+
+
+iex(48)> System.get_env("HOME")
+"/home/leo"
+iex(49)> System.get_env("SHELL")
+"/bin/bash"
+iex(50)> System.get_env("PWD")
+"/home/leo/work"
+iex(51)>
+
+
+iex(51)> Path.extname("hola.txt")
+".txt"
+iex(52)>
+
+
+
+iex(52)> File.cwd
+{:ok, "/home/leo/work"}
+iex(53)>
+
+
+iex(5)> System.cmd "uname", []
+{"Linux\n", 0}
+iex(6)> System.cmd "hostname", []
+{"lein\n", 0}
+iex(7)> 
+
+
