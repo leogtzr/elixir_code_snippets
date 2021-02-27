@@ -1,0 +1,14 @@
+iex(33)> %{ :name => "Leo" }
+%{name: "Leo"}
+iex(34)> %{ name: "Leo" }
+%{name: "Leo"}
+iex(35)> x = %{ name: "Leo" }
+%{name: "Leo"}
+iex(36)> x.name
+"Leo"
+iex(37)> x[:name]
+"Leo"
+iex(38)> %{ :name => the_name } = x
+%{name: "Leo"}
+iex(39)> 
+
