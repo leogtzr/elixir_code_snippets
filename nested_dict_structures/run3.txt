@@ -1,0 +1,26 @@
+iex(26)> report
+%BugReport{
+  details: "broken",
+  owner: %Customer{company: "AZ", name: "Leo Gtz"},
+  severity: 2
+}
+iex(27)> put_in(report.owner.company, "abc")
+%BugReport{
+  details: "broken",
+  owner: %Customer{company: "abc", name: "Leo Gtz"},
+  severity: 2
+}
+iex(28)> report = put_in(report.owner.company, "abc")
+%BugReport{
+  details: "broken",
+  owner: %Customer{company: "abc", name: "Leo Gtz"},
+  severity: 2
+}
+iex(29)> report
+%BugReport{
+  details: "broken",
+  owner: %Customer{company: "abc", name: "Leo Gtz"},
+  severity: 2
+}
+iex(30)> 
+
