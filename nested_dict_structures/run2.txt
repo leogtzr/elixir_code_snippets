@@ -1,0 +1,41 @@
+iex(19)> report = %BugReport{details: "broken", severity: 2, owner: %Customer{company: "AZ", name: "Leo Gtz"}}
+%BugReport{
+  details: "broken",
+  owner: %Customer{company: "AZ", name: "Leo Gtz"},
+  severity: 2
+}
+iex(20)> report
+%BugReport{
+  details: "broken",
+  owner: %Customer{company: "AZ", name: "Leo Gtz"},
+  severity: 2
+}
+iex(21)> report2 = %BugReport{ report | owner: %Customer{company: "AutoZone", name: "Leonardo Gutiérrez Ramírez"}}
+%BugReport{
+  details: "broken",
+  owner: %Customer{company: "AutoZone", name: "Leonardo Gutiérrez Ramírez"},
+  severity: 2
+}
+iex(22)> report2
+%BugReport{
+  details: "broken",
+  owner: %Customer{company: "AutoZone", name: "Leonardo Gutiérrez Ramírez"},
+  severity: 2
+}
+iex(23)> report1
+** (CompileError) iex:23: undefined function report1/0
+
+iex(23)> report
+%BugReport{
+  details: "broken",
+  owner: %Customer{company: "AZ", name: "Leo Gtz"},
+  severity: 2
+}
+iex(24)> report2 
+%BugReport{
+  details: "broken",
+  owner: %Customer{company: "AutoZone", name: "Leonardo Gutiérrez Ramírez"},
+  severity: 2
+}
+iex(25)> 
+
