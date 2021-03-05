@@ -1,0 +1,16 @@
+Erlang/OTP 23 [erts-11.0.3] [source] [64-bit] [smp:8:8] [ds:8:8:10] [async-threads:1]
+
+Interactive Elixir (1.10.3) - press Ctrl+C to exit (type h() ENTER for help)
+iex(1)> report = %{ owner: %{ name: "Leo", company: "AZ" }, severity: 2}
+%{owner: %{company: "AZ", name: "Leo"}, severity: 2}
+iex(2)> report
+%{owner: %{company: "AZ", name: "Leo"}, severity: 2}
+iex(3)> report[:severity]
+2
+iex(4)> report[:owner]   
+%{company: "AZ", name: "Leo"}
+iex(5)> report[:owner][:name]
+"Leo"
+iex(6)> 
+
+
