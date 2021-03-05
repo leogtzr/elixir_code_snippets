@@ -1,0 +1,21 @@
+iex(10)> %Customer{}                                                      
+%Customer{company: "", name: ""}
+iex(11)> report = %BugReport{owner: %Customer{name: "El Leo"}, details: "", severity: 1}
+%BugReport{
+  details: "",
+  owner: %Customer{company: "", name: "El Leo"},
+  severity: 1
+}
+iex(12)> report
+%BugReport{
+  details: "",
+  owner: %Customer{company: "", name: "El Leo"},
+  severity: 1
+}
+iex(13)> report.owner
+%Customer{company: "", name: "El Leo"}
+iex(14)> report.owner.name
+"El Leo"
+iex(15)> 
+
+
