@@ -1,0 +1,5 @@
+iex(7)> put_in(report[:owner][:name], "Leo Gutiérrez Ramírez")
+%{owner: %{company: "AZ", name: "Leo Gutiérrez Ramírez"}, severity: 2}
+iex(8)> r3 = put_in(report[:owner][:name], "Leo Gutiérrez Ramírez")
+%{owner: %{company: "AZ", name: "Leo Gutiérrez Ramírez"}, severity: 2}
+iex(9)> 
