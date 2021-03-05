@@ -1,0 +1,10 @@
+iex(9)> r3
+%{owner: %{company: "AZ", name: "Leo Gutiérrez Ramírez"}, severity: 2}
+iex(10)> update_in(report[:owner][:name], &("Name(" <> &1))
+%{owner: %{company: "AZ", name: "Name(Leo"}, severity: 2}
+iex(11)> update_in(report[:owner][:name], &("Name(" <> &1 <> ")"))
+%{owner: %{company: "AZ", name: "Name(Leo)"}, severity: 2}
+iex(12)> report2 = update_in(report[:owner][:name], &("Name(" <> &1 <> ")"))
+%{owner: %{company: "AZ", name: "Name(Leo)"}, severity: 2}
+iex(13)> 
+
