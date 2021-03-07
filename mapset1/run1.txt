@@ -1,0 +1,32 @@
+Interactive Elixir (1.10.3) - press Ctrl+C to exit (type h() ENTER for help)
+iex(1)> 1..5 
+1..5
+iex(2)> 1..5 |> Enum.into(MapSet.new)
+#MapSet<[1, 2, 3, 4, 5]>
+iex(3)> set1 = 1..5 |> Enum.into(MapSet.new)
+#MapSet<[1, 2, 3, 4, 5]>
+iex(4)> set1 = 1..5 |> Enum.into(MapSet.new)
+#MapSet<[1, 2, 3, 4, 5]>
+iex(5)> set2 = 3..8 |> Enum.into(MapSet.new)
+#MapSet<[3, 4, 5, 6, 7, 8]>
+iex(6)> set1
+#MapSet<[1, 2, 3, 4, 5]>
+iex(7)> set2
+#MapSet<[3, 4, 5, 6, 7, 8]>
+iex(8)> MapSet.member? set1, 3
+true
+iex(9)> MapSet.member? set1, 7
+false
+iex(10)> MapSet.member? set2, 7
+true
+iex(11)> MapSet.union set1, set2
+#MapSet<[1, 2, 3, 4, 5, 6, 7, 8]>
+iex(12)> MapSet.difference set1, set2
+#MapSet<[1, 2]>
+iex(13)> MapSet.difference set2, set1
+#MapSet<[6, 7, 8]>
+iex(14)> MapSet.intersection set2, set1
+#MapSet<[3, 4, 5]>
+iex(15)> 
+
+
