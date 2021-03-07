@@ -1,0 +1,17 @@
+iex(3)> get_and_update_in(cast, [Access.all(), :actor, :last], fn val -> {val, String.upcase(val)} end)
+{["Wright", "Elwes"],
+ [
+   %{
+     actor: %{first: "Robin", last: "WRIGHT"},
+     character: "Buttercup",
+     role: "princess"
+   },
+   %{
+     actor: %{first: "Cary", last: "ELWES"},
+     character: "Westley",
+     role: "farm boy"
+   }
+ ]}
+iex(4)> 
+
+

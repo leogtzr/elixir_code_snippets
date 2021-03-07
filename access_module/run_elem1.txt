@@ -1,0 +1,24 @@
+iex(1)> cast = [
+...(1)>     %{
+...(1)>         character: "Buttercup",
+...(1)>         actor: {"Robin", "Wright"},
+...(1)>         role: "princess"
+...(1)>     },
+...(1)>     %{
+...(1)>         character: "Westley",
+...(1)>         actor: {"Carey", "Elwes"},
+...(1)>         role: "farm boy"
+...(1)>     }
+...(1)> ]
+[
+  %{actor: {"Robin", "Wright"}, character: "Buttercup", role: "princess"},
+  %{actor: {"Carey", "Elwes"}, character: "Westley", role: "farm boy"}
+]
+iex(2)> 
+nil
+iex(3)> get_in(cast, [Access.all(), :actor, Access.elem(0)])
+["Robin", "Carey"]
+iex(4)> get_in(cast, [Access.all(), :actor, Access.elem(1)])
+["Wright", "Elwes"]
+iex(5)> 
+

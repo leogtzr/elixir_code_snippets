@@ -1,0 +1,29 @@
+Interactive Elixir (1.10.3) - press Ctrl+C to exit (type h() ENTER for help)
+iex(1)> cast = %{
+...(1)>     buttercup: %{
+...(1)>         actor: {"Robin", "Wright"},
+...(1)>         role: "princess"
+...(1)>     },
+...(1)>     westley: %{
+...(1)>         actor: {"Carey", "Elwes"},
+...(1)>         role: "farm boy"
+...(1)>     }
+...(1)> }
+%{
+  buttercup: %{actor: {"Robin", "Wright"}, role: "princess"},
+  westley: %{actor: {"Carey", "Elwes"}, role: "farm boy"}
+}
+iex(2)> 
+nil
+iex(3)> get_in(cast, [Access.key(:westley), :actor, Access.elem(1)])
+"Elwes"
+iex(4)> get_in(cast, [Access.key(:westley), :actor, Access.elem(0)])
+"Carey"
+iex(5)> get_and_update_in(cast, [Access.key(:buttercup), :role], fn val -> {val, "Queen"} end)
+{"princess",
+ %{
+   buttercup: %{actor: {"Robin", "Wright"}, role: "Queen"},
+   westley: %{actor: {"Carey", "Elwes"}, role: "farm boy"}
+ }}
+iex(6)> 
+

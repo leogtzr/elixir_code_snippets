@@ -1,0 +1,14 @@
+iex(6)> names = ["brenda", "leo", "edgar", "edgar", "maría"]
+["brenda", "leo", "edgar", "edgar", "maría"]
+iex(7)> for name <- names do
+...(7)> IO.inspect name
+...(7)> end
+"brenda"
+"leo"
+"edgar"
+"edgar"
+"maría"
+["brenda", "leo", "edgar", "edgar", "maría"]
+iex(8)> 
+
+

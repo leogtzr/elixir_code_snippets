@@ -1,0 +1,36 @@
+[
+  %{
+    actor: %{first: "Robin", last: "Wright"},
+    character: "Buttercup",
+    role: "princess"
+  },
+  %{
+    actor: %{first: "Cary", last: "Elwes"},
+    character: "Westley",
+    role: "farm boy"
+  }
+]
+iex(3)> 
+nil
+iex(4)> cast
+[
+  %{
+    actor: %{first: "Robin", last: "Wright"},
+    character: "Buttercup",
+    role: "princess"
+  },
+  %{
+    actor: %{first: "Cary", last: "Elwes"},
+    character: "Westley",
+    role: "farm boy"
+  }
+]
+iex(5)> get_in(cast, [Access.all(), :character])
+["Buttercup", "Westley"]
+iex(6)> get_in(cast, [Access.at(0), :character])
+"Buttercup"
+iex(7)> get_in(cast, [Access.at(1), :character])
+"Westley"
+iex(8)> 
+
+

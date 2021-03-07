@@ -1,0 +1,27 @@
+iex(27)> nested
+%{
+  butterucup: %{actor: %{first: "Robin", last: "Wright"}, role: "princess"},
+  westley: %{actor: %{first: "Cary", last: "Elwes"}, role: "farm boy"}
+}
+iex(28)> get_in(nested, [:butterucup, :actor, :first])
+"Robin"
+iex(29)>
+
+iex(33)> nested
+%{
+  butterucup: %{actor: %{first: "Robin", last: "Wright"}, role: "princess"},
+  westley: %{actor: %{first: "Cary", last: "Elwes"}, role: "farm boy"}
+}
+iex(34)> put_in(nested, [:westley, :actor, :last], "arroz")
+%{
+  butterucup: %{actor: %{first: "Robin", last: "Wright"}, role: "princess"},
+  westley: %{actor: %{first: "Cary", last: "arroz"}, role: "farm boy"}
+}
+iex(35)>
+
+
+iex(5)> get_in(authors, [languages_with_an_r, :name])
+["José", nil, "Larry"]
+iex(6)>
+
+
