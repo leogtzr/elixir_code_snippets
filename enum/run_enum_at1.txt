@@ -1,0 +1,18 @@
+iex(20)> Enum.at(10..20, 20, :no_one_here)
+:no_one_here
+iex(21)> Enum.at(10..20, 19, :no_one_here)
+:no_one_here
+iex(22)> Enum.at(10..20, 5, :no_one_here) 
+15
+iex(23)> Enum.at(10..20, 7, :no_one_here)
+17
+iex(24)> Enum.at(10..20, 8, :no_one_here)
+18
+iex(25)> Enum.at(10..20, 9, :no_one_here)
+19
+iex(26)> Enum.at(10..20, 10, :no_one_here)
+20
+iex(27)> Enum.at(10..20, 11, :no_one_here)
+:no_one_here
+iex(28)> 
+

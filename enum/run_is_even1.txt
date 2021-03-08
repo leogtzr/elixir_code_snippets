@@ -1,0 +1,6 @@
+iex(3)> require Integer                       
+Integer
+iex(4)> Enum.filter(1..10, &Integer.is_even/1)
+[2, 4, 6, 8, 10]
+iex(5)> 
+
