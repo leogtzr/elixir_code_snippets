@@ -1,0 +1,14 @@
+iex(1)> options = [ {:width, 72}, {:style, "light"}, {:style, "print"} ]
+[width: 72, style: "light", style: "print"]
+iex(2)> options
+[width: 72, style: "light", style: "print"]
+iex(3)> options[:width]
+72
+iex(4)> options[:width] + 2
+74
+iex(5)> List.last options
+{:style, "print"}
+iex(6)> Keyword.get_values options, :style
+["light", "print"]
+iex(7)> 
+
