@@ -1,0 +1,4 @@
+iex(22)> IO.puts File.read!("/tmp/x") |> String.split |> Enum.max_by(&String.length/1)
+Ramirez
+:ok
+iex(23)>
