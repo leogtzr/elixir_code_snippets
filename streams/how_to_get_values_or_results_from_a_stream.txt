@@ -1,0 +1,17 @@
+iex(30)> s = Stream.map [1, 3, 5, 7], &(&1 + 1)
+#Stream<[enum: [1, 3, 5, 7], funs: [#Function<48.48559900/1 in Stream.map/2>]]>
+iex(31)> s
+#Stream<[enum: [1, 3, 5, 7], funs: [#Function<48.48559900/1 in Stream.map/2>]]>
+iex(32)> Enum.to_list s
+[2, 4, 6, 8]
+iex(33)> squares = Stream.map [1, 2, 3, 4, 5], &(&1 * &1) 
+#Stream<[
+  enum: [1, 2, 3, 4, 5],
+  funs: [#Function<48.48559900/1 in Stream.map/2>]
+]>
+iex(34)> Enum
+Enum          Enumerable    
+iex(34)> Enum.to_list squares
+[1, 4, 9, 16, 25]
+iex(35)> 
+

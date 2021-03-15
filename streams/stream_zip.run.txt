@@ -1,0 +1,10 @@
+iex(9)> Str
+Stream      String      StringIO    
+iex(9)> Stream.cycle(~w{ leo gutierrez ramirez })
+#Function<64.48559900/2 in Stream.unfold/2>
+iex(10)> Stream.cycle(~w{ leo gutierrez ramirez }) |> Stream.zip(1..5)
+#Function<68.48559900/2 in Stream.zip/1>
+iex(11)> Stream.cycle(~w{ leo gutierrez ramirez }) |> Stream.zip(1..5) |> Enum.to_list
+[{"leo", 1}, {"gutierrez", 2}, {"ramirez", 3}, {"leo", 4}, {"gutierrez", 5}]
+iex(12)> 
+

@@ -1,0 +1,13 @@
+iex(12)>  IO.puts File.open!("/usr/share/dict/words") |> IO.stream(:line) |> Enum.max_by(&String.length/1)
+electroencephalograph's
+
+:ok
+iex(13)> 
+
+
+iex(13)> IO.puts File.stream!("/usr/share/dict/words") |> Enum.max_by(&String.length/1)
+electroencephalograph's
+
+:ok
+iex(14)>
+

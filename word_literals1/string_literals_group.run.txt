@@ -1,0 +1,9 @@
+String      StringIO    
+iex(5)> ~w{ leo gutierrez ramirez } |> Enum.filter(fn s -> String.length(s) > 2 end)
+["leo", "gutierrez", "ramirez"]
+iex(6)> ~w{ leo gutierrez ramirez } |> Enum.filter(fn s -> String.length(s) > 5 end)
+["gutierrez", "ramirez"]
+iex(7)> ~w{ leo gutierrez ramirez } |> Enum.filter(fn s -> String.length(s) > 5 end)
+["gutierrez", "ramirez"]
+iex(8)> 
+
