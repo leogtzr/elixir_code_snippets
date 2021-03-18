@@ -1,0 +1,4 @@
+iex(3)> Stream.cycle(~w{ Leo Gutierrez Ramirez }) |> Stream.zip(1..5) |> Enum.to_list
+[{"Leo", 1}, {"Gutierrez", 2}, {"Ramirez", 3}, {"Leo", 4}, {"Gutierrez", 5}]
+iex(4)> 
+

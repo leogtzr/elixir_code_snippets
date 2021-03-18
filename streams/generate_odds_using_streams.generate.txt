@@ -1,0 +1,4 @@
+iex(17)> Stream.iterate(2, &(&1 * 2)) |> Stream.take(4) |> Enum.to_list
+[2, 4, 8, 16]
+iex(18)> 
+

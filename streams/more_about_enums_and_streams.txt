@@ -1,0 +1,10 @@
+ex(8)> Stream.repeatedly(fn -> true end) |> Enum.take(5)
+[true, true, true, true, true]
+iex(9)> Stream.repeatedly(&:random.uniform/0)            
+#Function<53.48559900/2 in Stream.repeatedly/1>
+iex(10)> Stream.repeatedly(&:random.uniform/0) |> Enum.take(3)
+[0.4435846174457203, 0.7230402056221108, 0.94581636451987]
+iex(11)> Stream.repeatedly(&:random.uniform/0) |> Enum.take(3) |> Enum.filter(fn x -> x > 0.4 end)
+[0.5014907142064751, 0.597447524783298]
+iex(12)> 
+
