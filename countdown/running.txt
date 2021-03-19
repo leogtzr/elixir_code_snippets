@@ -1,0 +1,19 @@
+Erlang/OTP 23 [erts-11.0.3] [source] [64-bit] [smp:8:8] [ds:8:8:10] [async-threads:1]
+
+Interactive Elixir (1.10.3) - press Ctrl+C to exit (type h() ENTER for help)
+iex(1)> counter = Countdown.timer
+#Function<54.48559900/2 in Stream.resource/3>
+iex(2)> speaker = counter |> Str
+Stream      String      StringIO    
+iex(2)> speaker = counter |> Stream.each(&Co
+Code               Collectable        CompileError       CondClauseError    
+Config             Countdown          
+iex(2)> speaker = counter |> Stream.each(&Countdown.say/1)
+#Stream<[
+  enum: #Function<54.48559900/2 in Stream.resource/3>,
+  funs: [#Function<39.48559900/1 in Stream.each/2>]
+]>
+iex(3)> speaker |> Enum.take(6)
+["36", "35", "34", "33", "32", "31"]
+iex(4)> 
+
