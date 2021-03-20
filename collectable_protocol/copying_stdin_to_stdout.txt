@@ -1,0 +1,8 @@
+iex(13)> Enum.into IO.stream(:stdio, :line), IO.stream(:stdio, :line) 
+ok
+ok
+no,
+no,
+please
+please
+

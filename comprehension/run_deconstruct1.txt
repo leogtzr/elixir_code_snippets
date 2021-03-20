@@ -1,0 +1,7 @@
+iex(19)> reports = [dallas: :hot, minneapolis: :cols, dc: :muggy, la: :smoggy]
+[dallas: :hot, minneapolis: :cols, dc: :muggy, la: :smoggy]
+iex(20)> reports
+[dallas: :hot, minneapolis: :cols, dc: :muggy, la: :smoggy]
+iex(21)> for {city, weather} <- reports, do: { weather, city }
+[hot: :dallas, cols: :minneapolis, muggy: :dc, smoggy: :la]
+iex(22)> 

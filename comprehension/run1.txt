@@ -1,0 +1,14 @@
+iex(8)> for x <- 1..8, do: x*x                                              
+[1, 4, 9, 16, 25, 36, 49, 64]
+iex(9)> for x <- 1..9, (x*x) < 20, do: x                                    
+[1, 2, 3, 4]
+iex(10)> for x <- [1,2], y <- [5,6, 7], do: IO.puts("x is: #{x}, y is: #{y}")
+x is: 1, y is: 5
+x is: 1, y is: 6
+x is: 1, y is: 7
+x is: 2, y is: 5
+x is: 2, y is: 6
+x is: 2, y is: 7
+[:ok, :ok, :ok, :ok, :ok, :ok]
+iex(11)> 
+

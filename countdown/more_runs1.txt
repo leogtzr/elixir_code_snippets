@@ -1,0 +1,11 @@
+ex(1)> counter =  Countdown.timer
+#Function<54.48559900/2 in Stream.resource/3>
+iex(2)> counter |> Str
+Stream      String      StringIO    
+iex(2)> counter |> Stream.each(&Countdown.say/1) |> Enum.take(45)
+["1"]
+iex(3)> counter |> Stream.each(&Countdown.say/1) |> Enum.take(45)
+
+BREAK: (a)bort (A)bort with dump (c)ontinue (p)roc info (i)nfo
+       (l)oaded (v)ersion (k)ill (D)b-tables (d)istribution
+
